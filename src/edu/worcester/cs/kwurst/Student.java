@@ -219,7 +219,8 @@ public class Student
      * @return the student's remaining credits to graduate
      */
     public int getCurrentRemainingCr() {
-        return REQUIRED_CR - currentEarnedCr;
+    	return (currentEarnedCr >= 120)?0:(REQUIRED_CR - currentEarnedCr);
+    	
     }
 
     /**
